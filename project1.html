@@ -16,15 +16,15 @@
     let date;
     let time;
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      setInterval(() => {
+    setInterval(() => {
       a = new Date();
       date = a.toLocaleDateString(undefined, options);
-      time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds()  ;
+      time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
       document.getElementById('time').innerHTML = time + "<br>on " + date;
     }, 1000);
 
-    for(let i=0; i<800; i++){
-      for(let j=0; j<200; j++) {console.log('hi',i,new Date())}
+    for (let i = 0; i < 800; i++) {
+      for (let j = 0; j < 200; j++) { console.log('hi', i, j, new Date()) }
     }
 
 
